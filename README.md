@@ -1,6 +1,6 @@
 # david-has-anxiety-contracts
 
-Bookmark: Create a new Pinata project and copy keys to my .env file
+Bookmark: Getting art_metadata.py to import correctly into upload_to_pinata.py
 
 TODO: 
 1. Upload metadata to IPFS 
