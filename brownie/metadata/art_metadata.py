@@ -1,4 +1,10 @@
-art_pieces = {
+public_metadata_template = {
+    "name": "",
+    "description": "",
+    "image_uri": "",
+}
+
+art_piece_metadata = {
     "covid": {
         "name": "covid",
         "description": "desc",
@@ -38,5 +44,5 @@ art_pieces = {
         "name": None,
         "description": None,
         "filename": None
-    }
+    },
 }
