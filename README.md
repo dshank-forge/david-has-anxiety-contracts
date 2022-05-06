@@ -1,6 +1,6 @@
 # david-has-anxiety-contracts
 
-Bookmark: Getting art_metadata.py to import correctly into upload_to_pinata.py
+Bookmark: Continue working on upload_to_pinata.py and make sure functions work together.
 
 TODO: 
 1. Upload metadata to IPFS 
