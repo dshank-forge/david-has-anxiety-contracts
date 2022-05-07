@@ -1,7 +1,7 @@
 public_metadata_template = {
     "name": "",
     "description": "",
-    "image_uri": "",
+    "image": "",
 }
 
 art_piece_metadata = {

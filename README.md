@@ -1,6 +1,6 @@
 # david-has-anxiety-contracts
 
-Bookmark: Continue working on upload_to_pinata.py and make sure functions work together.
+Bookmark: Upload to pinata script seems to be working. Waiting on Pinata to get back to me about pinned JSON question. Could also try pinning using the pinJSON API endpoint.
 
 TODO: 
 1. Upload metadata to IPFS 
