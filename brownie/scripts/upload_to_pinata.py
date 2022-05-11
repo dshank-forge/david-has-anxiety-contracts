@@ -43,7 +43,7 @@ def pin_json_to_pinata(image_uri, art_piece_metadata):
         print(os.getcwd())
         with open(filepath, "w") as file:
             json.dump(metadata, file)
-            response = pin_file_to_pinata(filepath)
+            response = pin_file_to_pinata_2(filepath)
 
 def pin_file_to_pinata(filepath):
     filename = filepath.split("/")[-1]
@@ -57,3 +57,20 @@ def pin_file_to_pinata(filepath):
         print(response.json())
         return response.json()
            
+def pin_file_to_pinata_2(filepath):
+    print('---pin_file_to_pinata_2---')
+    print(filepath)
+    filename = filepath.split("/")[-1]
+    print(filename)
+    with Path(filepath).open("r") as fp: 
+        # file_binary = json.load(fp.read())
+        file_binary = '{"name": "covid", "description": "desc", "image": "https://ipfs.io/ipfs/QmfGRphZSS2avjtZFPa7FvfDL4h2sXPDbtk1c5f6eZHkup?filename=covid.gif"}'
+        print(file_binary)
+        print(fp)
+        response = requests.post(
+            PINATA_BASE_URL + endpoint,
+            files={"file": (filename, file_binary)},
+            headers=headers
+        )
+        print(response.json())
+        return response.json()
